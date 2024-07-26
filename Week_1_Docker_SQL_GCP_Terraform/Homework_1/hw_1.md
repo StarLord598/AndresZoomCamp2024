@@ -90,8 +90,76 @@ docker run -d \
 postgres:13
 ```
 5. Forward the codespaces port to 5432 to access via local machine
-6. 
+6. install ```jupyternotebook```, ```psycopg2-binary```, ```sqlalchemy``` and  onto my codespaces environment
+7. perform some basic pandas analysis on top of it to extract answer
+a. Analysis of my python code can be found in my jupyter notebook; 
+    /workspaces/AndresZoomCamp2024/Week_1_Docker_SQL_GCP_Terraform/Homework_1/Homework1_jupyter_notebook.ipynb
+
 
 
 Question 3 Answer: 
-- 
+- 15612
+
+## Question 4. Longest trip for each day
+
+Which was the pick up day with the longest trip distance?
+Use the pick up time for your calculations.
+
+Tip: For every trip on a single day, we only care about the trip with the longest distance. 
+
+- 2019-09-18
+- 2019-09-16
+- 2019-09-26
+- 2019-09-21
+
+Steps Taken to Answer Question: 
+1. perform some basic pandas analysis on top of it to extract answer
+a. Analysis of my python code can be found in my jupyter notebook; 
+    /workspaces/AndresZoomCamp2024/Week_1_Docker_SQL_GCP_Terraform/Homework_1/Homework1_jupyter_notebook.ipynb
+
+Question 4 Answer: 
+- The pick-up day with the longest trip distance is 2019-09-26 with a distance of 341.64
+
+## Question 5. Three biggest pick up Boroughs
+
+Consider lpep_pickup_datetime in '2019-09-18' and ignoring Borough has Unknown
+
+Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000?
+ 
+- "Brooklyn" "Manhattan" "Queens"
+- "Bronx" "Brooklyn" "Manhattan"
+- "Bronx" "Manhattan" "Queens" 
+- "Brooklyn" "Queens" "Staten Island"
+
+Steps Taken to Answer Question: 
+1. perform some basic pandas analysis on top of it to extract answer
+a. Analysis of my python code can be found in my jupyter notebook; 
+    /workspaces/AndresZoomCamp2024/Week_1_Docker_SQL_GCP_Terraform/Homework_1/Homework1_jupyter_notebook.ipynb
+
+Question 5 Answer: 
+    None of the options are correct as no Borough had a sum of total_amount exceeding 50,000 on 2019-09-18.
+    Explanation:
+    Bronx: 397.84
+    Queens: 37.29
+    Manhattan: 16.71
+    None of the Boroughs meet the required threshold.
+
+## Question 6. Largest tip
+
+For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip?
+We want the name of the zone, not the id.
+
+Note: it's not a typo, it's `tip` , not `trip`
+
+- Central Park
+- Jamaica
+- JFK Airport
+- Long Island City/Queens Plaza
+
+Steps Taken to Answer Question: 
+1. perform some basic pandas analysis on top of it to extract answer
+a. Analysis of my python code can be found in my jupyter notebook; 
+    /workspaces/AndresZoomCamp2024/Week_1_Docker_SQL_GCP_Terraform/Homework_1/Homework1_jupyter_notebook.ipynb
+
+Question 6 Answer: 
+- Was not able to answer this question as 'Astoria' was removed from the zones table
