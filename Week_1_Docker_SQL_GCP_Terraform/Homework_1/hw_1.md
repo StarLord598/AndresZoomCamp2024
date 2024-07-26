@@ -75,7 +75,23 @@ Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in 
 - 89009
 
 Steps Taken to Answer Question: 
-1. Run ``````
+1. Run ```mkdir data``` in homework_week1 directory to store this data in the data folder for 
+2. Run ```wget https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv``` for new taxi_zone_lookup file
+3. Run ```wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz```
+a. ```gunzip green_tripdata_2019-09.csv.gz``` to collecting the gree trip data per the instructions
+4. Run the following docker run command to get docker up and started
+```
+docker run -d \
+--name pg-database \
+-e POSTGRES_USER=root \
+-e POSTGRES_PASSWORD=root \
+-e POSTGRES_DB=ny_taxi \
+-p 5432:5432 \
+postgres:13
+```
+5. Forward the codespaces port to 5432 to access via local machine
+6. 
+
 
 Question 3 Answer: 
 - 
