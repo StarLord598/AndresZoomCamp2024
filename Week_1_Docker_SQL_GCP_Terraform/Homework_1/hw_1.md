@@ -163,3 +163,13 @@ a. Analysis of my python code can be found in my jupyter notebook;
 
 Question 6 Answer: 
 - Was not able to answer this question as 'Astoria' was removed from the zones table
+
+## Terraform
+
+In this section homework we'll prepare the environment by creating resources in GCP with Terraform.
+
+In your VM on GCP/Laptop/GitHub Codespace install Terraform. 
+Copy the files from the course repo
+[here](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/01-docker-terraform/1_terraform_gcp/terraform) to your VM/Laptop/GitHub Codespace.
+
+Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
